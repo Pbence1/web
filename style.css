@@ -5,11 +5,12 @@ nav a {
     font-weight: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
+body {
     background-color: aqua;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-footer{
+footer {
     background-color: blueviolet;
-    margin: auto;
+    text-align: center;
+    color: white;
 }
