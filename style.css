@@ -14,3 +14,7 @@ foot{
     text-align: center;
     color: white;
 }
+
+div{
+    clear: both;
+}
