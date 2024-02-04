@@ -18,9 +18,9 @@ foot{
 #mt{
     width: 100px;
     height: 100px;
-    clear: both;
 }
 
 #lft{
     float: left;
+    clear: both;
 }
