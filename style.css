@@ -15,9 +15,12 @@ foot{
     color: white;
 }
 
-div{
+#mt{
+    width: 100px;
+    height: 100px;
     clear: both;
 }
-#l{
+
+#lft{
     float: left;
 }
