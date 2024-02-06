@@ -21,7 +21,7 @@ foot{
     display: block; margin: auto;
 }
 
-#lft{
-    
+#flt{
+    float: left;
 }
 
