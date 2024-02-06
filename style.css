@@ -15,13 +15,11 @@ foot{
     color: white;
 }
 
-#mt{
-    width: 100px;
-    height: 100px;
-    display: block; margin: auto;
-}
-
-#flt{
-    float: left;
-}
-
+.FoDiv{
+    justify-content: center;
+    display: flex;
+  }
+  
+  .Kepkereet{
+    margin: 0 10px;
+  }
