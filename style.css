@@ -27,4 +27,6 @@ foot{
   .KepKerett img {
     max-width: 100%;
     height: auto;
+    transition: 0.5s;
+    transform: scale(1.5);
   }
