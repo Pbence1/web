@@ -18,12 +18,10 @@ foot{
 #mt{
     width: 100px;
     height: 100px;
-    clear: both;
+    display: block; margin: auto;
 }
 
 #lft{
     float: left;
 }
-#mrg{
-    margin-left: 10px;
-}
+
