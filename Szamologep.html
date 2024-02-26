@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SzaMoLoGeP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        
+        <div id="xD">
+            <img src="calculator.png" alt="Ez itt egy Kalkulátor" title="Ez itt egy Kalkulátor" style="float: left;" id="calc">
+            <input type="button" value="Összeadás gomb" onclick="Összead()"> <br>
+            <input type="button" value="Kivonás gomb" onclick="Kivon()"> <br>
+            <input type="button" value="Szorzás gomb" onclick="Szoroz()"> <br>
+            <input type="button" value="Osztás gomb" onclick="Oszt()"> <br>
+        </div>
+
+        <script>
+            function Összead() {
+                let nev, nev2, eredmeny;
+               nev = Number(prompt("Add meg az első számot"));
+        while(Number.isNaN(nev)) {
+        nev = Number(prompt("Számot már b+!"));
+        }
+               nev2 = Number(prompt("Add meg az második számot"));
+        while(Number.isNaN(nev2)) {
+        nev2 = Number(prompt("Számot már b+!"))
+        }
+                eredmeny = nev + nev2
+                alert("A két szám összege:" + eredmeny)
+            }
+            function Kivon() {
+                let nev, nev2, eredmeny;
+               nev = Number(prompt("Add meg az első számot"));
+        while(Number.isNaN(nev)) {
+        nev = Number(prompt("Számot már b+!"));
+        }
+               nev2 = Number(prompt("Add meg az második számot"));
+        while(Number.isNaN(nev2)) {
+        nev2 = Number(prompt("Számot már b+!"))
+        }
+                eredmeny = nev - nev2
+                alert("A két szám összege:" + eredmeny)
+            }
+            function Szoroz() {
+                let nev, nev2, eredmeny;
+               nev = Number(prompt("Add meg az első számot"));
+        while(Number.isNaN(nev)) {
+        nev = Number(prompt("Számot már b+!"));
+        }
+               nev2 = Number(prompt("Add meg az második számot"));
+        while(Number.isNaN(nev2)) {
+        nev2 = Number(prompt("Számot már b+!"))
+        }
+                eredmeny = nev * nev2
+                alert("A két szám összege:" + eredmeny)
+            }
+            function Oszt() {
+                let nev, nev2, eredmeny;
+               nev = Number(prompt("Add meg az első számot"));
+        while(Number.isNaN(nev)) {
+        nev = Number(prompt("Számot már b+!"));
+        }
+               nev2 = Number(prompt("Add meg az második számot"));
+        while(Number.isNaN(nev2)) {
+        nev2 = Number(prompt("Számot már b+!"))
+        }
+                eredmeny = nev / nev2
+                alert("A két szám összege:" + eredmeny)
+            }
+    
+
+            
+    </script>
+
+
+
+
+    
+</body>
+</html>
