@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LISTA</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Színválasztó</title>
+<link rel="stylesheet" href="sztajl.css">
+
 <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon/favicon-16x16.png">
@@ -13,40 +13,43 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6c11c0">
 <meta name="msapplication-TileColor" content="#6c11c0">
 <meta name="theme-color" content="#6c11c0">
+
+</head>
 <body>
-    
+
     <nav>
         <a href="index.html">FŐOLDAL</a> |
         <a href="keplink.html">KÉPLINK FELADAT</a> |
         <a href="lista.html"> LIST </a> |
         <a href="urlap.html">Link az űrlaphoz</a> |
         <a href="tablazat.html"> Tablazat-Orarend feladat</a> |
-        <a href="Evszakok.html"> Évszakok </a> | 
+        <a href="Evszakok.html"> Évszakok </a> |
         <a href="Szamologep.html"> Számológép </a> |
         <a href="Szinvalasztooo.html"> Színválasztó</a> |
     </nav>
 
-<h3> Kedvenc tantárgy </h3>
-<ul>
 
-<li> IKT projekktmunka </li>
-<li> Angol </li>
-<li> Magyar nyelv és Irodalom</li>
+<div id="Dobozocska">
+  
+  <h1 id="title">Színválasztó Feladat</h1>
+  <input type="color" id="colorPicker" title="Válaszd ki a kedvenc színed!">
+  <div id="coloredText"></div>
+</div>
 
-</ul>
+<script>
+    let colorPicker = document.getElementById("colorPicker");
+    let title = document.getElementById("title");
+    let coloredText = document.getElementById("coloredText");
 
-<h3> Hobbi </h3>
-<ol>
-
-<li> Zene hallgatás </li>
-<li> Biciklizés</li>
-<li> Videójátékok</il>
-</ol>
-
-<br>
+    colorPicker.addEventListener("input", function() {
+        document.body.style.backgroundColor = colorPicker.value;
+        title.style.color = colorPicker.value;
+        coloredText.style.color = colorPicker.value;
+        coloredText.textContent = "Ez az a szín, melyet választottál!";
+    });
+</script>
 
 
-<footer id="foot">Készítette Pozsgai Bence</footer>
 
 </body>
 </html>
