@@ -36,17 +36,17 @@
   
   <h1>Kép cserés alkalmatosság</h1>
   
-    <img id="originalImage" src="Elso.jpg">
+    <img id="originalImage" src="img/Elso.jpg" onclick="">
   
   
   <script>
   const originalImage = document.getElementById('originalImage');
   
-  originalImage.addEventListener('click', function() {
-    if (originalImage.src.includes('Elso.jpg')) {
-      originalImage.src = ('Masodik.jpg');
+  originalImage.addEventListener('click', function()  {
+    if (originalImage.src.includes('img/Elso.jpg')) {
+      originalImage.src = ('img/Masodik.jpg');
     } else {
-      originalImage.src = ('Elso.jpg');
+      originalImage.src = ('img/Elso.jpg');
     }
   });
   </script>
