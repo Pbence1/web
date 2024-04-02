@@ -37,17 +37,17 @@
   <h1>Kép cserés alkalmatosság</h1>
   
   <div id="imageContainer">
-    <img id="originalImage" src="building-8620771_1280.jpg" alt="Első kép">
+    <img id="originalImage" src="Elso.jpg" alt="Első kép">
   </div>
   
   <script>
   const originalImage = document.getElementById('originalImage');
   
   originalImage.addEventListener('click', function() {
-    if (originalImage.src.includes('building-8620771_1280.jpg')) {
-      originalImage.src = ('skyscrapers-1893201_1280.jpg');
+    if (originalImage.src.includes('Elso.jpg')) {
+      originalImage.src = ('Masodik.jpg');
     } else {
-      originalImage.src = ('building-8620771_1280.jpg');
+      originalImage.src = ('Elso.jpg');
     }
   });
   </script>
