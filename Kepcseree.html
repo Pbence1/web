@@ -15,19 +15,6 @@
 <meta name="msapplication-TileColor" content="#6c11c0">
 <meta name="theme-color" content="#6c11c0">
 
-<style>
-    #imageContainer {
-      text-align: center;
-      margin-top: 50px;
-      color: cadetblue;
-      background-color: aqua;
-    }
-    #imageContainer img {
-      width: 300px;
-      height: auto;
-      cursor: pointer;
-    }
-  </style>
 
 </head>
 
@@ -50,7 +37,7 @@
   <h1>Kép cserés alkalmatosság</h1>
   
   <div id="imageContainer">
-    <img id="originalImage" src="building-8620771_1280.jpg" alt="Eredeti kép">
+    <img id="originalImage" src="building-8620771_1280.jpg" alt="Első kép">
   </div>
   
   <script>
@@ -58,9 +45,9 @@
   
   originalImage.addEventListener('click', function() {
     if (originalImage.src.includes('building-8620771_1280.jpg')) {
-      originalImage.src = 'skyscrapers-1893201_1280.jpg';
+      originalImage.src = ('skyscrapers-1893201_1280.jpg');
     } else {
-      originalImage.src = 'building-8620771_1280.jpg';
+      originalImage.src = ('building-8620771_1280.jpg');
     }
   });
   </script>
