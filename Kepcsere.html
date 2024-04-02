@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Évszakok</title>
+    <title>Kepcsere</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon/apple-touch-icon.png">
@@ -14,9 +14,26 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6c11c0">
 <meta name="msapplication-TileColor" content="#6c11c0">
 <meta name="theme-color" content="#6c11c0">
+
+<style>
+    #imageContainer {
+      text-align: center;
+      margin-top: 50px;
+      color: cadetblue;
+      background-color: aqua;
+    }
+    #imageContainer img {
+      width: 300px;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+
 </head>
 
 <body>
+    
+   
  <nav>
      <a href="index.html">FŐOLDAL</a> |
      <a href="keplink.html">KÉPLINK FELADAT</a> |
@@ -29,21 +46,25 @@
      <a href="Kepcsere.html"> Képcsere</a> |
  </nav>
 
- <div class="FoDivKeret">
-    <div class="KepKerett">
-      <img src="img/pirosasz.png" alt="Kép 1">
-      <div>Tavasz</div>
-    </div>
-    <div class="KepKerett">
-      <img src="img/tokasz.png" alt="Kép 2">
-      <div>Nyár</div>
-    </div>
-    <div class="KepKerett">
-      <img src="img/zoldasz.png" alt="Kép 3">
-      <div>Ősz</div>
-    </div>
-    <div class="KepKerett">
-      <img src="img/makkasz.png" alt="Kép 4">
-      <div>Tél</div>
-    </div>
+  
+  <h1>Kép csere alkalmatosság</h1>
+  
+  <div id="imageContainer">
+    <img id="originalImage" src="building-8620771_1280.jpg" alt="Eredeti kép">
   </div>
+  
+  <script>
+  const originalImage = document.getElementById('originalImage');
+  
+  originalImage.addEventListener('click', function() {
+    if (originalImage.src.includes('building-8620771_1280.jpg')) {
+      originalImage.src = 'skyscrapers-1893201_1280.jpg';
+    } else {
+      originalImage.src = 'building-8620771_1280.jpg';
+    }
+  });
+  </script>
+  
+  </body>
+  </html>
+
